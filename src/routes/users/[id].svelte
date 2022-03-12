@@ -1,5 +1,6 @@
 <script context="module">
 	import fetchAPI from '$lib/api';
+  export const hydrate = false;
 	export async function load({ params, fetch }) {
 		const user = await fetchAPI(fetch, `user/${params.id}`);
 
@@ -19,7 +20,6 @@
 	import { navigating } from '$app/stores';
 
 	export let user;
-  export const hydrate = false;
 </script>
 
 <div class="user-view">

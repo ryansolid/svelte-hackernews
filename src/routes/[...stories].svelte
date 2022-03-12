@@ -1,6 +1,8 @@
 <script context="module">
 	import fetchAPI from '$lib/api';
 
+	export const hydrate = false;
+
 	const mapStories = {
 		top: 'news',
 		new: 'newest',
@@ -33,8 +35,6 @@
 	export let stories;
 	export let page;
 	export let type;
-
-	export const hydrate = false;
 </script>
 
 <div class="news-view">
