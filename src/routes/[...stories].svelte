@@ -33,6 +33,8 @@
 	export let stories;
 	export let page;
 	export let type;
+
+	export const hydrate = false;
 </script>
 
 <div class="news-view">

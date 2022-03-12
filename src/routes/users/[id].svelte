@@ -19,6 +19,7 @@
 	import { navigating } from '$app/stores';
 
 	export let user;
+  export const hydrate = false;
 </script>
 
 <div class="user-view">
